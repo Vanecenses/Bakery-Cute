@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { Formik } from 'formik';
 import { registerInitialValues, registerValidationSchema } from '../../formik';
 
@@ -15,21 +13,13 @@ import {
   LoginEmailStyled,
   Form,
 } from './RegisterStyles';
-import { signInWithGoogle } from '../../firebase/firebase-utils';
+import { createUser, signInWithGoogle } from '../../firebase/firebase-utils';
+import useRedirect from '../../hooks/useRedirect';
 
 
 const Register = () => {
 
-const {currentUser} = useSelector(state => state.user)
-
-const navigate = useNavigate()
-
-useEffect(() => {
-  if(currentUser){
-    navigate('/')
-  }
-},[currentUser, navigate])
-
+useRedirect('/')
 
   return (
     <LoginContainerStyled>
@@ -38,7 +28,16 @@ useEffect(() => {
       <Formik
         initialValues={registerInitialValues}
         validationSchema={registerValidationSchema}
-        onSubmit={values => console.log(values)}
+        onSubmit={async (values, actions) => {
+          try {
+            await createUser(values.email, values.password, values.name);
+          } catch (error) {
+            if (error.code === 'auth/email-already-in-use') {
+              alert('Mail en uso');
+            }
+          }
+          actions.resetForm();
+        }}
       >
         <Form>
           <LoginInput name='name' type='text' placeholder='Nombre' />
@@ -54,7 +53,7 @@ useEffect(() => {
               src='https://media.gq.com/photos/55e5f611e4fe554f30881157/16:9/w_1280,c_limit/Screen%20Shot%202015-09-01%20at%203.01.13%20PM.png'
               alt=''
             />
-          </LoginButtonGoogleStyled>
+            </LoginButtonGoogleStyled>
           <LoginEmailStyled to='/login'>
             <p>¿Ya tenes cuenta? Inicia sesión</p>
           </LoginEmailStyled>

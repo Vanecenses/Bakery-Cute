@@ -6,3 +6,17 @@ export const firebaseConfig = {
   messagingSenderId: "933131075800",
   appId: "1:933131075800:web:a5e37a91249e4e389d17ad"
 };
+
+export const actionCodeSettingsVerification = {
+  url:
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000/'
+      : 'linkDeProducción',
+};
+
+export const actionCodeSettingsForgotPassword = {
+  url:
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000/login'
+      : 'linkDeProducción',
+};
