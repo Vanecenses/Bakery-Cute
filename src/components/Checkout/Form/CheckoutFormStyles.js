@@ -4,6 +4,11 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 export const CheckoutDatosStyled = styled.div`
   width: 50%;
   margin: 0 auto;
+
+
+ Input {
+    color: #773535;
+  }
 `;
 
 export const Formik = styled(FormikContainer)`

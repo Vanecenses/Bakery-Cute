@@ -37,7 +37,7 @@ export const LinksContainerStyled = styled.div`
   }
 
   a:first-child {
-    background: #fffeb3a8;
+    background: #fb777db0;
     border-radius: 1rem;
     display: flex;
     justify-content: center;

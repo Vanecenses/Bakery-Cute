@@ -19,7 +19,7 @@ export const LoginFormStyled = styled.form`
 `;
 
 export const LoginInputStyled = styled.input`
-  background-color: var(--gray-bg);
+  background-color: var(--white-bg);
   width: 300px;
   padding: 1.5rem 2rem;
   border-radius: 15px;
@@ -31,10 +31,10 @@ export const LoginButtonGoogleStyled = styled.button`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   outline: none;
   border: none;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background: var(--white-bg);
   color: white;
   cursor: pointer;

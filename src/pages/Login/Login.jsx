@@ -33,11 +33,10 @@ const Login = () => {
         <LoginButtonGoogleStyled
           onClick={() => signInWithGoogle()}
         >
-          <img
-            src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648432/coding/NucbaZappi/Assets/google-icon_jgdcr1.png'
+          <img style={{width:'30%'} }
+            src='https://media.gq.com/photos/55e5f611e4fe554f30881157/16:9/w_1280,c_limit/Screen%20Shot%202015-09-01%20at%203.01.13%20PM.png'
             alt=''
           />
-          Google
         </LoginButtonGoogleStyled>
         <LoginEmailStyled to='/'>
           <p>Crear una cuenta</p>

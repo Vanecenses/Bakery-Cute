@@ -16,7 +16,7 @@ export const MisOrdenesTitleStyled = styled.h2`
 export const MisOrdenesPatternStyled = styled.img`
   width: 100%;
   position: fixed;
-  bottom: -80px;
+  bottom: -69px;
 `;
 
 export const MisOrdenesBtnContainerStyled = styled.div`

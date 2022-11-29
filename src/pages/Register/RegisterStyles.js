@@ -24,12 +24,12 @@ export const LoginButtonGoogleStyled = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 1rem 1.5rem;
+  gap: 0px;
+  padding: 1rem;
   outline: none;
   border: none;
-  border-radius: 1rem;
-  background: var(--gray-bg);
+  border-radius: 2rem;
+  background: var(--white-bg);
   color: white;
   cursor: pointer;
 `;

@@ -16,7 +16,7 @@ export const ContainerStyled = styled(motion.div)`
   height: calc(100vh - 4rem);
 
   padding: 2rem;
-  background-color: rgb(252 249 168 / 74%);
+  background-color: rgb(248 246 209 / 74%);
   border-radius: 0 0 0 1rem;
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
 `;
@@ -89,7 +89,7 @@ export const ProductContainerStyled = styled.div`
   gap: 15px;
   width: 360px;
 
-  background: var( --galletita-bg);
+  background: #f9f8c3;
   box-shadow: 0 0 20px 5px rgba(223, 88,66, 0.6);
   padding: 1rem;
   border-radius: 15px;

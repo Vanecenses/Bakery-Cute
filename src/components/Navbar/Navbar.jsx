@@ -56,7 +56,7 @@ function Navbar() {
       <div>
         <Link to='/'>
           <img
-            src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648432/coding/NucbaZappi/Assets/nucba-zappi-icon_oe3ark.png'
+            src= 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fpanaderia_1669110&psig=AOvVaw0uKmzHMbb9oXLPu2jLZyHH&ust=1668809127162000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIC0u_ebtvsCFQAAAAAdAAAAABAE'
             alt=''
           />
         </Link>

@@ -13,13 +13,13 @@ import { CheckoutDatosStyled, Formik, Form } from './CheckoutFormStyles';
 const CheckoutForm = () => {
   return (
     <CheckoutDatosStyled>
-      <h2>Ingresá tus datos</h2>
-      <Formik
+      <h2 style={{fontFamily:'cursive'}}>Ingresá tus datos</h2>
+      <Formik 
         initialValues={checkoutInitialValues}
         validationSchema={checkoutValidationSchema}
         onSubmit={values => console.log(values)}
       >
-        <Form>
+        <Form >
           <Input
             name='name'
             htmlFor='nombre'
