@@ -20,7 +20,6 @@ export const StyledLink = styled(Link)`
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
-
   & span {
     font-weight: 800;
     font-size: 1rem;
@@ -32,7 +31,7 @@ export const StyledLink = styled(Link)`
 
 export const ProductsContainerStyled = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
   flex-wrap: wrap;
 `;
@@ -64,4 +63,5 @@ export const CostoTotalStyled = styled(CostoProductoStyled)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 `;

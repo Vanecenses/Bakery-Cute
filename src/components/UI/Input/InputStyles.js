@@ -25,9 +25,19 @@ export const InputStyled = styled.input`
   border-radius: 8px;
   height: 30px;
   padding: 0.5rem 1rem;
-  color: white;
+  color: #701e1e;
   width: 70%;
   margin-top: 1rem;
+
+  ::placeholder {
+    opacity: 60%;
+  }
+  -webkit-text-fill-color: #2f1616;
+  :-webkit-autofill,
+  :-webkit-autofill:hover,
+  :-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--white-bg) inset;
+  }
 `;
 
 export const ErrorMessageStyled = styled.p`

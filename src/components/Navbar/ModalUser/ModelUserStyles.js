@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const ModalContainerStyled = styled(motion.div)`
   position: absolute;
-  background-color:  var(--galletita-bg);
+  background-color: #f2f2c4;
   box-shadow: 0 0 50px 20px rgb(239 141 12 / 24%);
   width: 450px;
   top: 100px;
