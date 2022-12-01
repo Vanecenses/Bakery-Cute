@@ -40,7 +40,7 @@ const handlerSubmit = (e, value) => {
   return (
     <HeroContainerStyled>
       <div>
-        <h1 className='title' style={{ fontFamily:'cursive' ,color:' #ff5b5be8'} }>¿Qué categoria estas buscando?</h1>
+        <h1 className='title' style={{ fontFamily:'cursive' ,color:' #ff5b5be8'} }>¿Qué  estas buscando?</h1>
         <HeroFormStyled>
           <HeroSearchBarStyled
           value={value}
