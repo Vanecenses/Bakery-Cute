@@ -10,15 +10,13 @@ export const firebaseConfig = {
 export const actionCodeSettingsVerification = {
   url:
     process.env.NODE_ENV === 'development'
-    ? 'https://bakery-cute.vercel.app/'
-      // ? 'http://localhost:3000/'
-      : 'linkDeProducción',
+      ? 'http://localhost:3000/'
+      : 'https://bakery-cute.vercel.app/',
 };
 
 export const actionCodeSettingsForgotPassword = {
   url:
     process.env.NODE_ENV === 'development'
-    ? 'https://bakery-cute.vercel.app/login'
-      // ? 'http://localhost:3000/login'
-      : 'linkDeProducción',
+      ? 'http://localhost:3000/login'
+      : 'https://bakery-cute.vercel.app/login',
 };
