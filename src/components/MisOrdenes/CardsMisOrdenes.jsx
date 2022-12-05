@@ -8,7 +8,7 @@ const CardsMisOrdenes = () => {
 
   const {orders, loading, error} = useSelector(state => state.orders)
 
-  console.log(orders);
+  // console.log(orders);
 
   if(loading && !orders.length){
     return <Loader

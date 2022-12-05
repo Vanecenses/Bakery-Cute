@@ -26,7 +26,7 @@ const Resumen = () => {
   const {orderId} = useParams()
   
 
-  console.log(orderId);
+  // console.log(orderId);
 
   useEffect(() => {
     if(!orders.length && currentUser?.Id) {
