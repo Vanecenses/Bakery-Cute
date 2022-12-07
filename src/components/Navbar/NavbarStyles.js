@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.div`
   height: 100px;
-  background-color: #ff5b5bbd;
+  background-image: linear-gradient(to right, #f97676, #fffdda);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@ export const LinksContainerStyled = styled.div`
   }
 
   a:first-child {
-    background: #fb777db0;
+    background: #faeba3b0
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -65,8 +65,8 @@ export const CartNavStyled = styled.div`
 
     border-radius: 1rem;
     border: 1px solid white;
-    color: white;
-    background-color: red;
+    color: red;
+    background-color: yellow;
     font-size: 1rem;
   }
 `;

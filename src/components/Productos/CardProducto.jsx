@@ -8,6 +8,7 @@ import {
   CardPrice,
   ContainerPrice,
   ProductosCard,
+  CardImg,
 } from './CardsProductosStyles';
 
 const CardProducto = ({ img, title, desc, price, id }) => {
@@ -15,7 +16,7 @@ const CardProducto = ({ img, title, desc, price, id }) => {
   const dispatch = useDispatch()
 
   return (
-    <ProductosCard  style={{ fontFamily:'cursive',color:' #541212cf'}}>
+    <ProductosCard  style={{ fontFamily:'',color:' #541212cf'}}>
       <img src={img} alt={title} />
       <h2>{title}</h2>
       <p>{desc}</p>

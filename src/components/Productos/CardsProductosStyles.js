@@ -16,8 +16,12 @@ export const ProductosCard = styled.div`
   border-radius: 15px;
   padding: 1rem;
   img {
-    width: 100%;
-    margin-bottom: 1rem;
+  
+  width: 300px;
+  height: 240px;
+  border-radius: 25%;
+  object-fit: cover;
+
   }
   h2 {
     font-weight: 600;

@@ -16,11 +16,11 @@ const CardsProductos = ({ limit }) => {
   }
 
   return (
-    <ProductosContainer>
+    <ProductosContainer >
       {Object.entries(products).map(([, foods]) =>
         foods.map(food => {
           if (limit >= food.id || selectedCategory) {
-            return <CardProducto key={food.id} {...food} />;
+            return <CardProducto  key={food.id} {...food} />;
           }
           return null;
         })
